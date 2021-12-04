@@ -94,3 +94,13 @@ else
 end
 end
 
+%Confusion matrix
+Truedetecttion=[ ones(1, 15)];
+Detection=[1 1 1 0 1 1 1 0 0 0 0 1 0 0 1];
+confusionchart(Truedetecttion, Detection);
+title('Accuracy of tumor or no tumor detection');
+
+Righttype=[1 1 1 1 0 1 0 1 1 0 1 1 1 0 1];
+confusionchart(Truedetecttion,Righttype);
+title('Accuracy of classification');
+
